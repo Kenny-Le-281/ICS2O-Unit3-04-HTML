@@ -3,15 +3,6 @@
  * This file contains the JS functions for index.html 
 */
 
-/**
- * Check servie worker.
- */
- if (navigator.serviceWorker) {
-    navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-      scope: "/ICS2O-PWA-Test/",
-    })
-  }
-
 'use strict'
 
 /**
@@ -25,5 +16,5 @@ function convert () {
   const celsius = (fahrenheit - 32) * 5 / 9
 
   // output
-  document.getElementById('celsius').innerHTML = fahrenheit + '℉ in celsius is equal to: ' + celsius.toFixed(2) + '℃'
+  document.getElementById('celsius').innerHTML = fahrenheit + ' ℉ in celsius is equal to: ' + celsius.toFixed(2) + ' ℃'
 }
